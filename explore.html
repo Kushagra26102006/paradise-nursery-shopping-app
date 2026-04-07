@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations | Wanderlust</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Wanderlust.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html" class="active">Explore</a></li>
+            <li><a href="#" id="nav-favorites">Favorites (0)</a></li>
+        </ul>
+    </nav>
+
+    <div class="explore-container">
+        <div class="explore-header">
+            <h1>Explore Destinations</h1>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search by name or country...">
+            </div>
+            
+            <div class="search-bar" style="width: auto; background: transparent; border: none;">
+                <select id="explore-type" class="filter-select" style="margin-right: 10px; padding: 0.5rem 1rem; border-radius: 8px; background: rgba(30,41,59,0.8); color: white; border: 1px solid rgba(255,255,255,0.2); outline: none;">
+                    <option value="all">All Types</option>
+                    <option value="beach">Beach</option>
+                    <option value="city">City</option>
+                    <option value="mountain">Mountain</option>
+                </select>
+                <select id="explore-budget" class="filter-select" style="padding: 0.5rem 1rem; border-radius: 8px; background: rgba(30,41,59,0.8); color: white; border: 1px solid rgba(255,255,255,0.2); outline: none;">
+                    <option value="all">All Budgets</option>
+                    <option value="low">Low Budget</option>
+                    <option value="medium">Medium Budget</option>
+                    <option value="high">High Budget</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="destinations-grid" id="destinations-grid">
+            <!-- Cards will be populated here by JS -->
+        </div>
+    </div>
+
+    <!-- Data and logic -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

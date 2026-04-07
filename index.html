@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Premium Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Wanderlust.</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="#" id="nav-favorites">Favorites (0)</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="images/hero.png" alt="Beautiful landscape" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Find the perfect destination tailored to your budget and travel style.</p>
+            
+            <form id="hero-filter-form" class="filter-box">
+                <div class="filter-group">
+                    <label for="type">Destination Type</label>
+                    <select id="type" name="type">
+                        <option value="all">Any Type</option>
+                        <option value="beach">Beach & Island</option>
+                        <option value="city">City & Culture</option>
+                        <option value="mountain">Mountain & Adventure</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="budget">Budget Level</label>
+                    <select id="budget" name="budget">
+                        <option value="all">Any Budget</option>
+                        <option value="low">Budget Friendly</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">Luxury</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Find Destinations</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Data and logic -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
